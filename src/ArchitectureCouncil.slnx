@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ArchitectureCouncil.ApiService/ArchitectureCouncil.ApiService.csproj" />
+  <Project Path="ArchitectureCouncil.AppHost/ArchitectureCouncil.AppHost.csproj" />
+  <Project Path="ArchitectureCouncil.ServiceDefaults/ArchitectureCouncil.ServiceDefaults.csproj" />
+  <Project Path="ArchitectureCouncil.Web/ArchitectureCouncil.Web.csproj" />
+</Solution>

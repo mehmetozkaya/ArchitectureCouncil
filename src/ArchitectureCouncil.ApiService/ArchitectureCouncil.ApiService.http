@@ -1,0 +1,10 @@
+@ApiService_HostAddress = http://localhost:5488
+
+POST {{ApiService_HostAddress}}/debate
+Content-Type: application/json
+
+{
+  "context": "Should we use RabbitMQ or Azure Service Bus for our new microservices event-driven architecture? We are building an e-commerce platform with order processing, inventory updates, and notification services. We expect around 5,000 messages per minute at peak and the team is split between Azure-native and cloud-agnostic preferences."
+}
+
+###

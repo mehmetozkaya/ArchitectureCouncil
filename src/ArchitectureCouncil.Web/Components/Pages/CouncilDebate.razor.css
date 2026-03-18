@@ -1,0 +1,179 @@
+/* ── Layout ─────────────────────────────────────────────── */
+.council-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem 0 3rem;
+}
+
+/* ── Header ─────────────────────────────────────────────── */
+.council-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+    .council-header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #1a1a2e;
+    }
+
+    .council-header .lead {
+        font-weight: 500;
+        color: #333;
+    }
+
+/* ── Agents Panel ───────────────────────────────────────── */
+.agents-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.agent-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.agent-avatar {
+    font-size: 1.75rem;
+    line-height: 1;
+}
+
+.agent-info h6 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.agent-info small {
+    color: #6c757d;
+    font-size: 0.75rem;
+}
+
+.cloud-agent {
+    border-left: 3px solid #0078d4;
+}
+
+.oss-agent {
+    border-left: 3px solid #28a745;
+}
+
+.lead-agent {
+    border-left: 3px solid #6f42c1;
+}
+
+.vs-badge {
+    font-weight: 700;
+    color: #dc3545;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+    user-select: none;
+}
+
+.judge-separator {
+    width: 100%;
+    text-align: center;
+}
+
+.judge-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6c757d;
+    font-weight: 600;
+}
+
+/* ── Input Section ──────────────────────────────────────── */
+.input-section {
+    margin-bottom: 2rem;
+}
+
+/* ── Output Section ─────────────────────────────────────── */
+.output-section {
+    margin-bottom: 2rem;
+}
+
+/* ── Transcript Panel ───────────────────────────────────── */
+.debate-transcript {
+    max-height: 600px;
+    overflow-y: auto;
+    background: #1e1e2e;
+    padding: 1.5rem;
+}
+
+.transcript-text {
+    color: #cdd6f4;
+    font-family: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    background: transparent;
+    border: none;
+}
+
+/* ── Status Dots ────────────────────────────────────────── */
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+    .status-dot.debating {
+        background-color: #ffc107;
+        animation: pulse 1.5s infinite;
+    }
+
+    .status-dot.completed {
+        background-color: #28a745;
+    }
+
+    .status-dot.error {
+        background-color: #dc3545;
+    }
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+/* ── Typing Indicator ───────────────────────────────────── */
+.typing-indicator {
+    display: flex;
+    gap: 5px;
+    padding-top: 0.75rem;
+}
+
+    .typing-indicator span {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #89b4fa;
+        animation: bounce 1.4s infinite ease-in-out both;
+    }
+
+        .typing-indicator span:nth-child(1) {
+            animation-delay: -0.32s;
+        }
+
+        .typing-indicator span:nth-child(2) {
+            animation-delay: -0.16s;
+        }
+
+@keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); }
+}
